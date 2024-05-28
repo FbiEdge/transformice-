@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transformice</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="./JS/java.JS" defer></script>
-  <style>
-  
-    
-  </style>
+  <script src="./assets/java/java.js" defer></script>
+
 </head>
 <body>
   <div class="container">
@@ -84,31 +81,5 @@
       <a class="liens" target="_blank" href="https://twitter.com/transformice"><img src="assets/img/twitter.png" alt="Twitter"></a>
       <a class="liens" target="_blank" href="https://www.instagram.com/transformice"><img src="assets/img/instagram.png" alt="Instagram"></a>
     </div>
-
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const navItems = document.querySelectorAll('.slider-nav-item');
-
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? 'block' : 'none';
-      });
-
-      navItems.forEach((item, i) => {
-        item.classList.toggle('active', i === index);
-      });
-    }
-
-    navItems.forEach((item, index) => {
-      item.addEventListener('click', () => {
-        currentSlide = index;
-        showSlide(currentSlide);
-      });
-    });
-
-    showSlide(currentSlide);
-  </script>
 </body>
 </html>

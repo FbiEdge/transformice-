@@ -39,9 +39,9 @@ body {
   text-align: center;
 }
 .slider {
-  width: 80%; 
+  width: 100vw; 
   max-width: 1200px;
-  margin-bottom: 20px;
+  margin: 0 auto 32px auto;
   align-items: center;
   border: 50px;
 }
@@ -55,7 +55,8 @@ body {
   border-radius: 15px;
   margin-left: 240px;
   overflow: hidden; 
-align-items: center;}
+  align-items: center;
+}
 
 .slide iframe {
   width: 100%;
@@ -97,5 +98,5 @@ align-items: center;}
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center;
 }
