@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; 
+  background-image: 
+    url('https://www.transformice.com/img/fond.jpg'), 
+    url('https://cdn.discordapp.com/attachments/1110370783173287946/1244801009126215710/image.png?ex=66566ec7&is=66551d47&hm=620184b34e83f36c0e7e803b26b9df41e0a5d8a2657d6800c5f88d68b8844bd2&'); /* Imagem de fundo secundária */
+  background-size:
+    100%, 
+    cover; 
+  background-position:
+    top center, 
+    bottom; 
+  background-repeat: 
+    no-repeat, 
+    no-repeat; 
+
+  
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slider {
+  width: 80%; 
+  max-width: 1200px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 50px;
+}
+
+.slide {
+  width: 722px;
+  height: 371px ; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+  margin-left: 240px;
+  overflow: hidden; 
+align-items: center;}
+
+.slide iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slider-nav-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-nav-item.active {
+  background-color: #333;
+}
+
+#steam {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

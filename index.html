@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformice</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="./JS/java.JS" defer></script>
+  <style>
+  
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="">
+    </div>
+
+    <div class="header">
+      <div class="nav">
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="slide">
+        <iframe src="https://www.youtube.com/embed/1Ew8wnL7KtA?controls=2&rel=0&showinfo=0"></iframe>
+      </div>
+
+      <div class="slide" ><img src="assets/img/foto1.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+      
+      <div class="slide"><img src="assets/img/foto2.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide" ><img src="assets/img/foto3.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide" ><img src="assets/img/foto4.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide" ><img src="assets/img/foto5.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+      <div class="slide" ><img src="assets/img/foto6.jpg" alt="">
+        <div class="slide-content">
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <div class="slider-nav-item active"></div>
+        <div class="slider-nav-item"></div>
+        <div class="slider-nav-item"></div>
+        <div class="slider-nav-item"></div>
+        <div class="slider-nav-item"></div>
+        <div class="slider-nav-item"></div>
+        <div class="slider-nav-item"></div>
+      </div>
+    </div>
+</div>
+    <div id="centros">
+    <div id="steam">
+        <iframe style="width: 70%;max-width: 646px" src="https://store.steampowered.com/widget/335240/" frameborder="0" height="190"></iframe>
+    </div>
+     </div>
+    <div style="text-align: center; margin-bottom: 1em;">
+      <span>💻</span><a class="liens" href="https://www.transformice.com/Transformice.exe">Windows version</a>
+      <span>⚡️</span><a class="liens" href="https://www.transformice.com/transformice-swf.html">Old browser version</a>
+      <br>
+      <span>📋</span><a class="liens" target="_black" href="./divers/rules_of_conduct.html">Rules of conduct</a>
+      <span>🧾</span><a class="liens" target="_black" href="./divers/terms_and_conditions_of_use.html">Terms and conditions of use</a>
+      <span>🔒</span><a class="liens" target="_black" href="./divers/privacy_policy.html">Privacy policy</a>
+    </div>
+
+    <div style="text-align: center;">
+      <a class="liens" target="_blank" href="https://atelier801.com/"><img src="assets/img/rat.png" alt="Atelier 801"></a>
+      <a class="liens" target="_blank" href="https://discord.com/invite/transformice"><img src="assets/img/discord.png" alt="Discord"></a>
+      <a class="liens" target="_blank" href="https://twitter.com/transformice"><img src="assets/img/twitter.png" alt="Twitter"></a>
+      <a class="liens" target="_blank" href="https://www.instagram.com/transformice"><img src="assets/img/instagram.png" alt="Instagram"></a>
+    </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const navItems = document.querySelectorAll('.slider-nav-item');
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
+      });
+
+      navItems.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+    }
+
+    navItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
+
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
